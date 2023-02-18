@@ -5,7 +5,7 @@ const ProjectsPage = () => {
   return (
     <>
       <Head>
-        <title>KnowAnkit | Projects</title>
+        <title>CNgai | Projects</title>
       </Head>
       <Projects />
     </>

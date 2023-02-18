@@ -13,7 +13,7 @@ const FrontMatter = ({ matter }) => {
         <Box>
           <Avatar size="xs" src={'https://avatars0.githubusercontent.com/ninjaNgai'} />
           <Box as="span" fontSize="sm" ml="10px">
-            Ankit Kumar / {format(parseISO(matter.publishedAt), 'MMMM dd, yyyy')}
+            Courtney Ngai / {format(parseISO(matter.publishedAt), 'MMMM dd, yyyy')}
           </Box>
         </Box>
         <Box fontSize="sm" display="flex" alignItems="center">

@@ -1,5 +1,5 @@
 import { Box, Container, Heading, Stack, Text, useColorModeValue } from '@chakra-ui/react';
-import { FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaLinkedin, FaYoutube, FaGithub } from 'react-icons/fa';
 import { SocialFooterButton } from '../SocialFooterButton';
 
 const Logo = () => {
@@ -35,6 +35,12 @@ export default function Footer() {
             href={'https://www.linkedin.com/in/courtneyngai1010/'}
             target={'_blank'}>
             <FaLinkedin />
+          </SocialFooterButton>
+          <SocialFooterButton
+            label={'GitHub'}
+            href={'https://github.com/ninjaNgai'}
+            target={'_blank'}>
+            <FaGithub />
           </SocialFooterButton>
           <SocialFooterButton
             label={'YouTube'}
