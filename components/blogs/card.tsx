@@ -57,7 +57,7 @@ const ArticleCard = ({ post }): JSX.Element => {
         <Stack direction={'row'} spacing={4} align={'center'}>
           <Stack direction={'column'} spacing={0} fontSize={'sm'}>
             <Text fontWeight={600} color={useColorModeValue('gray.700', 'white')}>
-              Ankit Kumar
+              Courtney Ngai
             </Text>
             <Text color={'gray.500'}>
               {format(parseISO(post.publishedAt), 'MMMM dd, yyyy')} ·{' '}

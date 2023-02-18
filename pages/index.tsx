@@ -23,7 +23,7 @@ const Home = (props) => {
         <meta property="og:type" content={meta.type} />
         <meta property="og:url" content={`https://knowankit.com${router.asPath}`} />
         <link rel="canonical" href={`https://knowankit.com${router.asPath}`} />
-        <meta property="og:site_name" content="Know Ankit" />
+        <meta property="og:site_name" content="Courtney Ngai" />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content="https://knowankit.com/myself.png" />
         <meta name="twitter:card" content="summary_large_image" />

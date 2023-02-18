@@ -7,7 +7,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="icon" type="image/png" href="/portfolio-logo.png" />
+          <link rel="icon" type="image/png" href="/favicon-32x32.png" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
