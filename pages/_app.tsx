@@ -8,15 +8,16 @@ import MDXComponents from '@/components/mdx';
 function MyApp({ Component, pageProps }) {
   const theme = extendTheme({
     colors: {
-      brand: '#ff851b',
+      brand: '#48BB78',
       link: '#1890ff',
       project: '#0275d8',
-      blog: 'tomato',
+      blog: '#48BB78',
       textColor: 'black',
       bgColor: 'white'
     },
     fonts: {
-      body: 'Titillium Web'
+      heading: `'Open Sans', sans-serif`,
+      body: `'Raleway', sans-serif`
     }
   });
 

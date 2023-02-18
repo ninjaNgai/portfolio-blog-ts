@@ -29,20 +29,15 @@ const BlogLayout: FC<Props> = ({ children, frontMatter }) => {
   return (
     <>
       <Head>
-        <title>KnowAnkit - {frontMatter.title}</title>
+        <title>CNgai - {frontMatter.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={frontMatter.summary} name="description" />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:url" content={`https://knowankit.com${router.asPath}`} />
-        <link rel="canonical" href={`https://knowankit.com${router.asPath}`} />
-        <meta property="og:site_name" content="Know Ankit" />
+        <meta property="og:url" content={`https://iamcngai.com${router.asPath}`} />
+        <link rel="canonical" href={`https://iamcngai.com${router.asPath}`} />
+        <meta property="og:site_name" content="Courtney Ngai" />
         <meta property="og:title" content={frontMatter.title} />
-        <meta property="og:image" content={`https://knowankit.com${frontMatter.image}`} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@knowankit" />
-        <meta name="twitter:title" content={frontMatter.title} />
-        <meta name="twitter:description" content={frontMatter.summary} />
-        <meta name="twitter:image" content={`https://knowankit.com${frontMatter.image}`} />
+        <meta property="og:image" content={`https://iamcngai.com${frontMatter.image}`} />
       </Head>
       <Box className="mdx">
         <Global styles={prismDarkTheme} />

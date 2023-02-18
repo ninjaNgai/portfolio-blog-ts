@@ -16,7 +16,7 @@ const Home = (props) => {
   return (
     <>
       <Head>
-        <title>KnowAnkit | Home</title>
+        <title>CNgai | Home</title>
         <meta name="robots" content="follow, index" />
         <meta content={meta.summary} name="description" />
         <meta property="og:type" content={meta.type} />

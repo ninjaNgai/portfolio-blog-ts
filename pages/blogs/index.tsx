@@ -13,7 +13,7 @@ const BlogPage: FC<Posts & IProps> = ({ posts }): JSX.Element => {
   return (
     <>
       <Head>
-        <title>KnowAnkit | Blogs</title>
+        <title>CNgai | Blogs</title>
       </Head>
       <Blog posts={posts} />
     </>
