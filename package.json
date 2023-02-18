@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/knowankit/knowankit.com#readme",
   "dependencies": {
-    "@chakra-ui/react": "^1.6.4",
+    "@chakra-ui/react": "^1.8.9",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
