@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Box, Heading, Button } from '@chakra-ui/react';
+import { Box, Heading, Container, Text, Button, Stack, Img } from '@chakra-ui/react';
 import Navbar from '@/components/navbar';
 import RecentBlog from '@/components/homepage/recent-blog-card';
 import RecentProject from '@/components/homepage/recent-project-card';
@@ -60,58 +60,98 @@ const Profile = ({ posts }) => {
   return (
     <>
       <Navbar />
+      <Container maxW={'3xl'}>
+        <Stack
+          as={Box}
+          textAlign={'center'}
+          spacing={{ base: 8, md: 14 }}
+          py={{ base: 10, md: 18 }}>
+          <Stack
+            direction="row"
+            spacing={2}
+            align={'left'}
+            alignSelf={'center'}
+            position={'relative'}>
+            <Img
+              alt="Courtney Ngai"
+              src="images/profile.jpg"
+              objectFit="cover"
+              width="250px"
+              height="375px"
+              borderRadius="full"
+            />
+            <Stack align={'center'} alignSelf={'center'}>
+              <Heading
+                fontWeight={600}
+                fontSize={{ base: '2xl', sm: '3xl', md: '5xl' }}
+                lineHeight={'110%'}
+                marginLeft={'1rem'}>
+                The two constants
+                <br />
+                in life are <br />
+                <Text as={'span'} color={'green.400'}>
+                  change
+                </Text>{' '}
+                &{' '}
+                <Text as={'span'} color={'green.400'}>
+                  learning
+                </Text>
+              </Heading>
+            </Stack>
+          </Stack>
+
+          <Text color={'black.500'}>
+            Throughout my life, I’ve been the tech-enthusiast of my family with a curiosity of how
+            web applications work and each component of a web app creates a harmonious system. I’ve
+            also been a dancer for 20+ years which creates a practice of discipline, grit, and
+            artistry/creativity. I integrate my knowledge of Software Engineering & Dance to
+            creatively produce real-world solutions and leverage technology to provide value to
+            users.
+          </Text>
+          <Text>
+            Currently, I am a Software Engineer, Scrum Master, and Tech Lead in the PayPal Credit
+            organization working mainly on the development and upkeep of React, Node, and GraphQL
+            services.
+          </Text>
+          <Text>
+            With my eagerness for personal growth, I enjoy learning from multiple disciplines which
+            include: e-commerce, baking, and exploring dance as a physical user interface for
+            abstract Software Engineering concepts to produce dance pieces for film/media.
+          </Text>
+
+          <Stack
+            direction={'column'}
+            spacing={3}
+            align={'center'}
+            alignSelf={'center'}
+            position={'relative'}>
+            <Button
+              as={'a'}
+              display={{ base: 'none', md: 'inline-flex' }}
+              fontSize={'sm'}
+              fontWeight={600}
+              color={'white'}
+              rounded={'full'}
+              bg={'green.400'}
+              href={'/about'}
+              _hover={{
+                bg: 'green.300'
+              }}
+              marginBottom={'1rem'}>
+              Learn more
+            </Button>
+          </Stack>
+        </Stack>
+      </Container>
       <Box
-        height="80vh"
         id="profile"
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center">
-        <Box
-          textAlign="center"
-          display="flex"
-          justifyContent="space-between"
-          flexDirection="column"
-          alignItems="center">
-          <Box fontSize={['2rem', '2.5rem', '3rem', '3rem']} fontWeight="bold">
-            <Box display="inline-flex" position="relative" overflow="hidden">
-              <Box display="inline-flex" flexDirection="column">
-                <Box>Front-end</Box>
-                {/* <Box>Back-end</Box>
-                <Box>Full-stack</Box> */}
-              </Box>
-            </Box>
-            <Box display="inline-block" ml="10px">
-              Developer &nbsp;
-              <Box as="span">
-                &lt;
-                <Box as="span" className="dash">
-                  _
-                </Box>
-                /&gt;
-              </Box>
-            </Box>
-          </Box>
-          <Box
-            fontSize={['1rem', '1.6rem', '1.8rem', '1.8rem']}
-            mx={['2rem', '1rem', '1rem', '1rem']}>
-            <p>I code beautifully simple things and I love what I do</p>
-            <p>And of-course a love for egyptian bracket</p>
-          </Box>
-          <Box>
-            <Button
-              variant="ghost"
-              colorScheme="brand"
-              onClick={() => (window.location.href = 'https://github.com/knowankit')}>
-              <AiOutlineGithub /> &nbsp; {stars} stars
-            </Button>
-          </Box>
-        </Box>
         {/* {loadRecentProjectsAndBlogs()} */}
       </Box>
-      <Box>
-        <Footer />
-      </Box>
+      <Footer />
     </>
   );
 };

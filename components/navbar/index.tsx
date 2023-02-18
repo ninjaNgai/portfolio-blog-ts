@@ -118,7 +118,7 @@ const Navbar = () => {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}
-              marginLeft="1rem"
+              paddingLeft="1rem"
               _hover={{
                 textDecoration: 'none',
                 color: 'green.400'
@@ -137,7 +137,7 @@ const Navbar = () => {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}
-          marginRight="1rem">
+          paddingRight="1rem">
           <Button onClick={toggleColorMode}>
             {colorMode === 'light' ? <BsMoon /> : <BsSun />}
           </Button>

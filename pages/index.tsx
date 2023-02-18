@@ -3,6 +3,7 @@ import HomePage from '@/components/homepage';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
+import Navbar from '@/components/navbar';
 
 const meta = {
   type: 'website',
