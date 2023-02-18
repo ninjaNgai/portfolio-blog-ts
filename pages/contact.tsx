@@ -8,9 +8,9 @@ const ContactPage = () => {
   return (
     <>
       <Head>
-        <title>CNgai | About</title>
+        <title>CNgai | Contact</title>
       </Head>
-      <Box minHeight="90vh" id="artistry">
+      <Box minHeight="90vh" id="contact">
         <Navbar />
         <Contact />
       </Box>

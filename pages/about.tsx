@@ -10,7 +10,7 @@ const AboutPage = () => {
       <Head>
         <title>CNgai | About</title>
       </Head>
-      <Box minHeight="90vh" id="artistry">
+      <Box minHeight="90vh" id="about">
         <Navbar />
         <About />
       </Box>
