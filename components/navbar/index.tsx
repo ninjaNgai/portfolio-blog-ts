@@ -19,14 +19,23 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const router = useRouter();
 
+  const desktopMenus = [
+    { name: 'About', link: '/about' },
+    { name: 'Artistry', link: '/artistry' },
+    { name: 'Resume', link: './Ngai_Courtney_01.02_2023.pdf' },
+    { name: 'Blog', link: '/blogs' }
+  ];
+
+  const mobileMenus = [
+    { name: 'Home', link: '/' },
+    { name: 'About', link: '/about' },
+    { name: 'Artistry', link: '/artistry' },
+    { name: 'Resume', link: './Ngai_Courtney_01.02_2023.pdf' },
+    { name: 'Blog', link: '/blogs' }
+  ];
+
   const loadMenu = (isMobile = false) => {
-    const menus = [
-      { name: 'Home', link: '/' },
-      { name: 'About', link: '/about' },
-      { name: 'Artistry', link: '/artistry' },
-      { name: 'Projects', link: '/projects' },
-      { name: 'Blog', link: '/blogs' }
-    ];
+    const menus = isMobile ? mobileMenus : desktopMenus;
 
     if (isMobile) {
       return (
