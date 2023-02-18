@@ -7,6 +7,7 @@ import FrontMatter from '@/components/front-matter';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
+import Footer from '@/components/footer';
 
 const Comments = dynamic(import(/* webpackChunkName: "SocialShare" */ 'components/comments'), {
   ssr: false
@@ -29,7 +30,7 @@ const BlogLayout: FC<Props> = ({ children, frontMatter }) => {
   return (
     <>
       <Head>
-        <title>CNgai - {frontMatter.title}</title>
+        <title>{frontMatter.title}</title>
         <meta name="robots" content="follow, index" />
         <meta content={frontMatter.summary} name="description" />
         <meta property="og:type" content={meta.type} />
@@ -54,6 +55,7 @@ const BlogLayout: FC<Props> = ({ children, frontMatter }) => {
           {children}
           <Comments />
         </Box>
+        <Footer />
       </Box>
     </>
   );
