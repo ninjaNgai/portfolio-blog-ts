@@ -8,7 +8,6 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" type="image/png" href="/portfolio-logo.png" />
-          <link rel="icon" type="image/png" href="/portfolio-logo.png" />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>

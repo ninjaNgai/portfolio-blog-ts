@@ -22,9 +22,10 @@ const Navbar = () => {
   const loadMenu = (isMobile = false) => {
     const menus = [
       { name: 'Home', link: '/' },
+      { name: 'About', link: '/about' },
+      { name: 'Artistry', link: '/artistry' },
       { name: 'Projects', link: '/projects' },
-      { name: 'Blog', link: '/blogs' },
-      { name: 'About me', link: '/about' }
+      { name: 'Blog', link: '/blogs' }
     ];
 
     if (isMobile) {

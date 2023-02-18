@@ -109,7 +109,7 @@ const Profile = ({ posts }) => {
         </Box>
         {/* {loadRecentProjectsAndBlogs()} */}
       </Box>
-      <Box height="10vh">
+      <Box>
         <Footer />
       </Box>
     </>

@@ -12,7 +12,7 @@ const FrontMatter = ({ matter }) => {
         <Box>
           <Avatar
             size="xs"
-            src={'https://avatars0.githubusercontent.com/knowankit'}
+            src={'https://avatars0.githubusercontent.com/ninjaNgai'}
             alt={'Author'}
           />
           <Box as="span" fontSize="sm" ml="10px">
