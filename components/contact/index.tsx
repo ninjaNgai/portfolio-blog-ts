@@ -55,7 +55,7 @@ const Contact = () => {
         isClosable: true
       });
     } else {
-      let data = {
+      const data = {
         sender: name,
         senderEmail: email,
         receiver: 'Courtney',
@@ -168,7 +168,10 @@ const Contact = () => {
                     <Box paddingBottom={'3.75rem'} />
                     <SocialProfile />
                     <Text paddingLeft={'3rem'} paddingBottom={'2rem'} paddingRight={'2.5rem'}>
-                      Note for recruiters: Due to high volume, please reach out with the prefix “💯”
+                      Note for recruiters: Due to high volume, please reach out with the prefix{' '}
+                      <span role="img" aria-label="red 100">
+                        💯
+                      </span>
                       as all other emails will be filtered out. Thank you!
                     </Text>
                   </Container>

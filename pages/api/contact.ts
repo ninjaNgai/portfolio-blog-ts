@@ -5,7 +5,7 @@ export default async function (req, res) {
   require('dotenv').config();
   const receiverEmailAddress = receiverEmail || process.env.SMTP_TO_EMAIL;
 
-  let nodemailer = require('nodemailer');
+  const nodemailer = require('nodemailer');
   let description = 'Email has not been sent';
 
   const transporter = nodemailer.createTransport({
