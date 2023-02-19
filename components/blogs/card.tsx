@@ -44,7 +44,7 @@ const ArticleCard = ({ post }): JSX.Element => {
             fontWeight={800}
             fontSize={'sm'}
             letterSpacing={1.1}>
-            Blog
+            {post.tag}
           </Text>
           <Heading
             color={useColorModeValue('gray.700', 'white')}

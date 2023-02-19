@@ -38,6 +38,7 @@ const BlogLayout: FC<Props> = ({ children, frontMatter }) => {
         <link rel="canonical" href={`https://iamcngai.com${router.asPath}`} />
         <meta property="og:site_name" content="Courtney Ngai" />
         <meta property="og:title" content={frontMatter.title} />
+        <meta property="og:tag" content={frontMatter.tag} />
         <meta property="og:image" content={`https://iamcngai.com${frontMatter.image}`} />
       </Head>
       <Box className="mdx">

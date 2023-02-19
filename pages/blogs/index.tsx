@@ -3,7 +3,6 @@ import Blog from '@/components/blogs';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
 import { Posts } from '@/types/blog';
 import Head from 'next/head';
-import Footer from '@/components/footer';
 
 type IProps = {
   setTheme: () => void;
