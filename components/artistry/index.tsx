@@ -43,7 +43,7 @@ const Artistry = () => {
               </Text>
             </Box>
             <Heading color={'black.500'} mb={5} fontSize={{ base: '3xl', md: '5xl' }}>
-              The why behind the movement
+              The &quot;why&quot; behind the movement
             </Heading>
             <Text fontSize={'lg'} color={'gray.500'}>
               &quot;Many of my creative projects explore producing movement in the present moment by
@@ -56,7 +56,7 @@ const Artistry = () => {
               explores producing movement in the present moment by drawing from her diverse
               background of various movement styles and technological experience. Bringing a
               background of twenty-one years of dance experience, she has trained in the styles of
-              contemporary, ballet, tap, urban movement, hip hop, jazz, and latin.
+              contemporary, popping, Kpop, ballet, tap, hip hop, jazz, and Latin.
             </Text>
             <br></br>
             <Text fontSize={'xl'} color={'black.500'}>
@@ -207,7 +207,7 @@ const stats = [
     content: (
       <>
         <StatsText>Years of dance experience</StatsText>. She has trained in the styles of
-        contemporary, ballet, tap, urban movement, hip hop, kpop, jazz, and latin.
+        contemporary, popping, Kpop, ballet, tap, hip hop, jazz, and Latin.
       </>
     )
   },
