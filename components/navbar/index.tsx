@@ -48,14 +48,14 @@ const Navbar = () => {
     if (isMobile) {
       return (
         <Box
-          height="100vh"
+          height="70vh"
+          m="2rem"
           display="flex"
           flexDirection="column"
           justifyContent="center"
           alignItems="center">
           {menus.map((menu, index) => (
             <Box
-              m="1rem"
               height="10vh"
               key={index}
               fontWeight="bold"

@@ -12,7 +12,7 @@ const Blog: FC<Posts> = (props): JSX.Element => {
 
   return (
     <>
-      <Box height="90vh" id="profile">
+      <Box minHeight={'90vh'} id="profile">
         <Navbar />
         <Container maxWidth={'4xl'} marginTop="1rem">
           <Heading>Latest Posts</Heading>
