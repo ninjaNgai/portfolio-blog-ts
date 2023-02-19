@@ -45,11 +45,11 @@ const About = () => {
               <Heading>Software Engineer</Heading>
               <Text color={'black.500'} fontSize={'lg'}>
                 At 10 years old, I started playing an online game that allowed you to trade for
-                virtual items each having its own value. I would spend hours in the trading
-                clubhouse finding people to trade with daily. One day, I clicked the Inspect tool
+                virtual items with assigned values. I would spend hours in the trading clubhouse
+                daily finding people to trade with. One day, I decided to click on the Inspect tool
                 and became curious about what the code meant and how the animations worked. Prior to
-                college, I took an into to HTML, CSS, and JavaScript course which increased my
-                curiosity of wanting to learn more about building web applications.
+                college, I took an intro to HTML, CSS, and JavaScript course which furthered my
+                interest of wanting to learn more about building web applications.
               </Text>
               <Text color={'green.600'} fontSize={'lg'}>
                 Current thought: How can we build features for products that provide the most value

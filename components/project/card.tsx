@@ -1,13 +1,4 @@
-import {
-  Box,
-  Heading,
-  Text,
-  HStack,
-  Stack,
-  Img,
-  useColorModeValue,
-  Divider
-} from '@chakra-ui/react';
+import { Box, Heading, Text, Stack, Img, useColorModeValue, Divider } from '@chakra-ui/react';
 import ProjectModal from './modal';
 
 export default function ProjectCard({

@@ -93,9 +93,9 @@ const Profile = ({ posts }) => {
 
           <Text color={'black.500'}>
             Throughout my life, I’ve been the tech-enthusiast of my family with a curiosity of how
-            web applications work and each component of a web app creates a harmonious system. I’ve
-            also been a dancer for 20+ years which creates a practice of discipline, grit, and
-            artistry/creativity. I integrate my knowledge of Software Engineering & Dance to
+            web applications work and how each component of a web app creates a harmonious system.
+            I’ve also been a dancer for 21+ years which cultivates a practice of discipline, grit,
+            and artistry/creativity. Integrating my knowledge of Software Engineering & Dance, I can
             creatively produce real-world solutions and leverage technology to provide value to
             users.
             <br />
@@ -105,7 +105,7 @@ const Profile = ({ posts }) => {
             services.
             <br />
             <br />
-            With my eagerness for personal growth, I enjoy learning from multiple disciplines which
+            Being eager for personal growth, I enjoy learning from multiple disciplines which
             include: e-commerce, baking, and exploring dance as a physical user interface for
             abstract Software Engineering concepts to produce dance pieces for film/media.
           </Text>

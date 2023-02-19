@@ -10,17 +10,17 @@ export const projects = [
     company: 'PayPal',
     circaDate: 'Summer 2018 (3 months)',
     summary:
-      'As a Software Engineer Intern at PayPal during Summer 2018, I developed the web application that allowed the FinProd developers to perform administrative and diagnostic functions for a few of their RESTful services. The web application was coded in ReactJS, Node.js for the front-end and Express.js and SQL for the back-end.',
+      'As a Software Engineer Intern at PayPal during Summer 2018, I developed the web application that allowed the FinProd developers to perform administrative and diagnostic functions for several of their RESTful services. The web application was coded in ReactJS, Node.js for the front-end and Express.js and SQL for the back-end.',
     modalInfo: {
       projectType: 'INTERNSHIP',
-      body: 'This web application allows FinProd developers to perform administrative and diagnostic functions for a few of their RESTful services.',
+      body: 'This web application allows FinProd developers to perform administrative and diagnostic functions for several of their RESTful services.',
       body2:
         'I developed the application using a PayPal-specific web application template. From there, I was able to add in different React components for navigation and making CRUD operations.',
       techStack:
         'The application is coded using React.JS, Node.js, Express.js, and SQL. I was also able to implement SSO with 2FA, build and deploy the application.',
       projectAccomplishments: [
         'Designed an internal full stack web application for 10+ Java microservices within PayPal Credit',
-        'Experience with React, Node.js, Express.js, Bootstrap, SQL.',
+        'Gained experience with React, Node.js, Express.js, Bootstrap, SQL.',
         'Implemented SSO with 2-Factor Authentication, created builds via Jenkins, deployed application to Sandbox and Production environments'
       ]
     }
@@ -41,7 +41,7 @@ export const projects = [
       projectType: 'INTERNSHIP',
       body: 'The iOS application uses the Murata 1XD module for Wi-Fi and Bluetooth communications on the MiniZed. The app displays readings from low data rate sensors on the ST accelerometer and temperature sensor, board status, and other features such as setting up Wi-Fi by providing network credentials.',
       body2:
-        'I developed the prototype version that received the motion (accelerometer and gyroscope) and temperature sensor data via Bluetooth and displayed the data on the screen. To better understand how the data was displayed on the screen, one version of the prototype showed the motion data from the iPad sensors.',
+        'I developed the prototype version that received the motion (accelerometer and gyroscope) and temperature sensor data via Bluetooth, and displayed the data on the screen. To better understand how the data was displayed on the screen, one version of the prototype showed the motion data from the iPad sensors.',
       techStack: 'The application is coded in Swift 3 using XCode as the IDE.',
       projectAccomplishments: [
         'Created iOS IOT Bluetooth application to demonstrate 3D Motion Graphics with user interactive motion.',
@@ -90,13 +90,13 @@ export const projects = [
       'As a Data Analytics Intern at Avnet during Summer 2017, I modified IoT IBM Bluemix UI dashboard web application code using HTML, JavaScript, and CSS. I demonstrated the IBM Bluemix application and new dashboard at Avnet Field Application Engineering Expo.',
     modalInfo: {
       projectType: 'INTERNSHIP_2016',
-      body: 'The objective was to enhance the appearance and function of the web dashboard used to display the temperature sensor data from the MicroZed Industrial IoT Kit via any web browser. To be accomplished via IBM Bluemix Services.',
+      body: 'The objective was to enhance the appearance and function of the web dashboard used to display the temperature sensor data from the MicroZed Industrial IoT Kit via any web browser. The dashboard was built using IBM Bluemix Services.',
       techStack: 'HTML, CSS, Javascript, NodeJS',
       projectAccomplishments: [
         'Investigated and researched IBM Bluemix Services for compatibility and functionality with Avnet IoT boards.',
         'Modified IoT IBM Bluemix user interface dashboard web application code using HTML, JavaScript, and CSS on respective code modules.',
-        'Demonstrated IBM Bluemix application and new dashboard at Avnet Field Applications Engineering Expo with production MicroZed Industrial IoT Kit.',
-        'Attended 1-Week Avnet FAE Expo to assist in display and support of both Zedboard and Xilinx board offerings and their capabilities.  '
+        'Demonstrated IBM Bluemix application and new dashboard at the Avnet Field Applications Engineering Expo with production MicroZed Industrial IoT Kit.',
+        'Attended 1-Week Avnet FAE Expo to assist in display and support of both Zedboard and Xilinx board offerings and their capabilities.'
       ],
       slidesLink: './Avnet Summer 2016 Internship.pdf'
     }
