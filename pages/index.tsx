@@ -3,12 +3,12 @@ import HomePage from '@/components/homepage';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { getAllFilesFrontMatter } from '@/lib/mdx';
-import Navbar from '@/components/navbar';
 
 const meta = {
   type: 'website',
-  title: 'My personal portfolio',
-  summary: 'I will post my learning and projects here'
+  title: 'Courtney Ngai Portfolio',
+  summary: 'Come see what I have been coding and creating!',
+  img: 'images/cn-black-logo-640x640.jpg'
 };
 
 const Home = (props) => {
@@ -21,16 +21,11 @@ const Home = (props) => {
         <meta name="robots" content="follow, index" />
         <meta content={meta.summary} name="description" />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:url" content={`https://knowankit.com${router.asPath}`} />
-        <link rel="canonical" href={`https://knowankit.com${router.asPath}`} />
+        <meta property="og:url" content={`https://iamcngai.com${router.asPath}`} />
+        <link rel="canonical" href={`https://iamcngai.com${router.asPath}`} />
         <meta property="og:site_name" content="Courtney Ngai" />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content="https://knowankit.com/myself.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@knowankit" />
-        <meta name="twitter:title" content={meta.title} />
-        <meta name="twitter:description" content={meta.summary} />
-        <meta name="twitter:image" content="https://knowankit.com/myself.png" />
+        <meta property="og:image" content="images/cn-black-logo-640x640.jpg" />
       </Head>
       <HomePage posts={props.posts} />
     </>
