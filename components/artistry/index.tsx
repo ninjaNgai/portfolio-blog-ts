@@ -8,10 +8,10 @@ import {
   Text,
   Stack,
   Box,
-  Badge
+  Badge,
+  useColorModeValue,
+  VStack
 } from '@chakra-ui/react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
 import { SocialButton } from '../SocialButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faSoundcloud, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -29,15 +29,19 @@ const Artistry = () => {
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
         <Stack spacing={4}>
           <Box mb={{ base: 8, md: 20 }}>
-            <Text
-              fontFamily={'heading'}
-              fontWeight={700}
-              textTransform={'uppercase'}
-              mb={3}
-              fontSize={'xl'}
-              color={'gray.500'}>
-              Artistry
-            </Text>
+            <Box maxW="10rem" marginBottom="1rem">
+              <Text
+                textTransform={'uppercase'}
+                color={'green.400'}
+                fontWeight={600}
+                fontSize={'sm'}
+                bg={useColorModeValue('green.50', 'green.900')}
+                p={2}
+                alignSelf={'flex-start'}
+                rounded={'md'}>
+                Artist Statement
+              </Text>
+            </Box>
             <Heading color={'black.500'} mb={5} fontSize={{ base: '3xl', md: '5xl' }}>
               The why behind the movement
             </Heading>
@@ -112,7 +116,7 @@ const Artistry = () => {
       </SimpleGrid>
       <Divider marginTop={'2rem'} marginBottom={'1rem'} />
       <Heading marginBottom={'1rem'}>Press</Heading>
-      <Flex flexDirection={'row'}>
+      <Stack spacing={2} direction={['column', 'row']}>
         <Box flex="1" marginRight={'1rem'}>
           <Img
             alt="Undergrad Fall 2018"
@@ -153,39 +157,39 @@ const Artistry = () => {
           <br />
           <Text as="i">ASU State Press</Text>
         </Box>
-      </Flex>
+      </Stack>
       <Divider marginTop={'2rem'} marginBottom={'1rem'} />
       <Heading marginBottom={'1rem'}>Social Media</Heading>
       <Stack direction={'row'} spacing={6}>
-        <Box>
+        <VStack>
           <SocialButton
             label={'YouTube'}
             href={'https://www.linkedin.com/in/courtneyngai1010/'}
             target={'_blank'}>
-            <FontAwesomeIcon icon={faYoutube} />
+            <FontAwesomeIcon icon={faYoutube} size={'3x'} />
           </SocialButton>
           <Text textAlign={'center'}>@courtneyngai</Text>
-        </Box>
-        <Box>
+        </VStack>
+        <VStack>
           <SocialButton
             label={'Instagram'}
             href={'https://www.instagram.com/ninjangai1/'}
             target={'_blank'}>
-            <FontAwesomeIcon icon={faInstagram} />
+            <FontAwesomeIcon icon={faInstagram} size={'3x'} />
           </SocialButton>
           <Text textAlign={'center'}>@ninjangai1</Text>
-        </Box>
-        <Box>
+        </VStack>
+        <VStack>
           <SocialButton
             label={'Soundcloud'}
             href={
               'https://soundcloud.com/courtney-ngai-749460472/diwali-2022?utm_source=clipboard&utm_campaign=wtshare&utm_medium=widget&utm_content=https%253A%252F%252Fsoundcloud.com%252Fcourtney-ngai-749460472%252Fdiwali-2022'
             }
             target={'_blank'}>
-            <FontAwesomeIcon icon={faSoundcloud} />
+            <FontAwesomeIcon icon={faSoundcloud} size={'3x'} />
           </SocialButton>
           <Text textAlign={'center'}>@MANYI</Text>
-        </Box>
+        </VStack>
       </Stack>
     </Container>
   );

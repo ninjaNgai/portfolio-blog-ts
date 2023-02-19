@@ -8,9 +8,13 @@ import {
   Text,
   Stack,
   useColorModeValue,
-  Box
+  Box,
+  VStack
 } from '@chakra-ui/react';
 import { projects } from '../../constants/projects';
+import { SocialButton } from '../SocialButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
   return (
@@ -61,9 +65,17 @@ const About = () => {
         ))}
         <Divider margin={'1rem'} />
         <Heading marginBottom={'1rem'}>GitHub</Heading>
-        <Box display="flex" justifyContent="center" alignItems="center" p="1rem">
-          <GitHubCalendar username="ninjaNgai" />
-        </Box>
+        <Stack spacing={2} direction={['column', 'row']}>
+          <VStack justifyContent="center" alignItems="center">
+            <SocialButton label={'GitHub'} href={'https://github.com/ninjaNgai'} target={'_blank'}>
+              <FontAwesomeIcon icon={faGithub} size={'3x'} />
+            </SocialButton>
+            <Text textAlign={'center'}>@ninjaNgai</Text>
+          </VStack>
+          <Box display="flex" justifyContent="center" alignItems="center" p="1rem">
+            <GitHubCalendar username="ninjaNgai" />
+          </Box>
+        </Stack>
       </Container>
     </>
   );
