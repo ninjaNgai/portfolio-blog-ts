@@ -22,18 +22,17 @@ export default function ProjectCard({
 }) {
   return (
     <>
-      <Box
-        w={['full', '32rem', '32rem', '50vw']}
-        minW={'30rem'}
+      <Stack
+        spacing={2}
+        direction={['column', 'row']}
         bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'md'}
         rounded={'md'}
         cursor="pointer"
-        p={6}
         mx="auto"
         overflow={'hidden'}
         marginBottom={'1rem'}>
-        <HStack spacing={'1rem'}>
+        <Box>
           <Img
             objectFit="cover"
             maxW={{ base: '100%', sm: '300px' }}
@@ -41,6 +40,8 @@ export default function ProjectCard({
             src={img.src}
             alt={img.alt}
           />
+        </Box>
+        <Box flex="1" padding="1rem">
           <Stack>
             <Heading size="md">{heading}</Heading>{' '}
             <Heading
@@ -65,8 +66,8 @@ export default function ProjectCard({
               {...modalInfo}
             />
           </Stack>
-        </HStack>
-      </Box>
+        </Box>
+      </Stack>
     </>
   );
 }

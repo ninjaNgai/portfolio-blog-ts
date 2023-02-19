@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Box, Heading, Container, Text, Button, Stack, Img } from '@chakra-ui/react';
+import { Box, Heading, Container, Text, Button, Stack, VStack, Img } from '@chakra-ui/react';
 import Navbar from '@/components/navbar';
 import RecentBlog from '@/components/homepage/recent-blog-card';
 import RecentProject from '@/components/homepage/recent-project-card';
@@ -61,26 +61,17 @@ const Profile = ({ posts }) => {
     <>
       <Navbar />
       <Container maxW={'3xl'}>
-        <Stack
-          as={Box}
-          textAlign={'center'}
-          spacing={{ base: 8, md: 14 }}
-          py={{ base: 10, md: 18 }}>
-          <Stack
-            direction="row"
-            spacing={2}
-            align={'left'}
-            alignSelf={'center'}
-            position={'relative'}>
+        <VStack textAlign={'left'} spacing={{ base: 8, md: 14 }} py={{ base: 10, md: 18 }}>
+          <Stack direction="row" align={'left'} alignSelf={'left'}>
             <Img
               alt="Courtney Ngai"
               src="images/profile.jpg"
               objectFit="cover"
-              width="250px"
-              height="375px"
+              width="15rem"
+              height="23rem"
               borderRadius="full"
             />
-            <Stack align={'center'} alignSelf={'center'}>
+            <Stack align={'center'} alignSelf={'center'} textAlign="center" paddingRight="0.5rem">
               <Heading
                 fontWeight={600}
                 fontSize={{ base: '2xl', sm: '3xl', md: '5xl' }}
@@ -107,13 +98,13 @@ const Profile = ({ posts }) => {
             artistry/creativity. I integrate my knowledge of Software Engineering & Dance to
             creatively produce real-world solutions and leverage technology to provide value to
             users.
-          </Text>
-          <Text>
+            <br />
+            <br />
             Currently, I am a Software Engineer, Scrum Master, and Tech Lead in the PayPal Credit
             organization working mainly on the development and upkeep of React, Node, and GraphQL
             services.
-          </Text>
-          <Text>
+            <br />
+            <br />
             With my eagerness for personal growth, I enjoy learning from multiple disciplines which
             include: e-commerce, baking, and exploring dance as a physical user interface for
             abstract Software Engineering concepts to produce dance pieces for film/media.
@@ -141,7 +132,7 @@ const Profile = ({ posts }) => {
               Learn more
             </Button>
           </Stack>
-        </Stack>
+        </VStack>
       </Container>
       <Box
         id="profile"

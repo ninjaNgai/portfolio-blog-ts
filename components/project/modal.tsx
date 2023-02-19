@@ -85,7 +85,7 @@ export default function ProjectModal({
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Button onClick={onOpen}>View more</Button>
+      <Button onClick={onOpen}>Read more</Button>
 
       <Modal isOpen={isOpen} onClose={onClose} size={'3xl'}>
         <ModalOverlay />
