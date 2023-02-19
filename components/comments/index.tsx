@@ -10,7 +10,7 @@ const Comments = () => {
     const theme = colorMode === 'light' ? 'github-light' : 'github-dark';
 
     commentScript.setAttribute('src', 'https://utteranc.es/client.js');
-    commentScript.setAttribute('repo', 'knowankit/knowankit.com');
+    commentScript.setAttribute('repo', 'ninjaNgai/iamcngai.com');
     commentScript.setAttribute('theme', theme);
     commentScript.setAttribute('crossorigin', 'anonymous');
     commentScript.setAttribute('async', 'true');
