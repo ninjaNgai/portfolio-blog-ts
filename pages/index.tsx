@@ -8,7 +8,7 @@ const meta = {
   type: 'website',
   title: 'Courtney Ngai Portfolio',
   summary: 'Come see what I have been coding and creating!',
-  img: 'images/cn-black-logo-640x640.jpg'
+  img: '/images/cn-black-logo-640x640.jpg'
 };
 
 const Home = (props) => {
@@ -25,7 +25,7 @@ const Home = (props) => {
         <link rel="canonical" href={`https://iamcngai.com${router.asPath}`} />
         <meta property="og:site_name" content="Courtney Ngai" />
         <meta property="og:title" content={meta.title} />
-        <meta property="og:image" content="images/cn-black-logo-640x640.jpg" />
+        <meta property="og:image" content={meta.img} />
       </Head>
       <HomePage posts={props.posts} />
     </>
