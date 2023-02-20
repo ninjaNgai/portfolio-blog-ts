@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
 
   const blockquoteStyle = {
     borderLeft: '3px solid #48BB78',
-    margin: '1rem 1rem',
+    margin: '1rem 0 1rem',
     padding: '0.5rem 1rem 0.5rem 1rem'
   };
 
