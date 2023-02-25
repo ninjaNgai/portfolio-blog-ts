@@ -106,8 +106,9 @@ const Profile = ({ posts }) => {
             <br />
             <br />
             Being eager for personal growth, I enjoy learning from multiple disciplines which
-            include: e-commerce, baking, and exploring dance as a physical user interface for
-            abstract Software Engineering concepts to produce dance pieces for film/media.
+            include: reading self-development books, baking, and exploring dance as a physical user
+            interface for abstract Software Engineering concepts to produce dance pieces for
+            film/media.
           </Text>
 
           <Stack
