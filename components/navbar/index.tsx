@@ -15,10 +15,12 @@ import {
 } from '@chakra-ui/react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { BsMoon, BsSun } from 'react-icons/bs';
+import { useScrollPosition } from '../../hooks/useScrollPosition';
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  const scrollPosition = useScrollPosition();
   const router = useRouter();
 
   const desktopMenus = [
@@ -82,18 +84,43 @@ const Navbar = () => {
     ));
   };
 
+  const getBackgroundColor = () => {
+    if (colorMode === 'dark') {
+      return scrollPosition > 0
+        ? {
+            background: 'rgba(51, 51, 54, 0.48)',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+            backdropFilter: 'blur(4.6px)',
+            '-webkit-backdrop-filter': 'blur(4.6px)',
+            border: '1px solid rgba(51, 51, 54, 0.35)'
+          }
+        : { backgroundColor: 'gray.800' };
+    }
+    return scrollPosition > 0
+      ? {
+          background: 'rgba(255, 255, 255, 0.21)',
+          boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+          backdropFilter: 'blur(4.9px)',
+          '-webkit-backdrop-filter': 'blur(4.9px)',
+          border: '1px solid rgba(255, 255, 255, 0.17)'
+        }
+      : { backgroundColor: 'white' };
+  };
+
   const NavigationBar = () => (
-    <Box>
-      <Flex
-        bg={useColorModeValue('white', 'gray.800')}
-        color={useColorModeValue('gray.600', 'white')}
-        minH={'60px'}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={'solid'}
-        borderColor={useColorModeValue('gray.200', 'gray.900')}
-        align={'center'}>
+    <Flex
+      sx={{ ...getBackgroundColor() }}
+      color={useColorModeValue('gray.600', 'white')}
+      position="fixed"
+      width="100%"
+      zIndex={'1'}
+      minH={'60px'}
+      py={{ base: 2 }}
+      px={{ base: 4 }}
+      borderBottom={1}
+      borderStyle={'solid'}
+      borderColor={useColorModeValue('gray.200', 'gray.900')}>
+      <Flex align="center" justify="center" boxSize="full">
         <Flex
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
@@ -155,7 +182,7 @@ const Navbar = () => {
       <Collapse in={isOpen} animateOpacity>
         {loadMenu(true)}
       </Collapse>
-    </Box>
+    </Flex>
   );
 
   return <NavigationBar />;

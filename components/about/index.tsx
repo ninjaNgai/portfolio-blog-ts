@@ -19,7 +19,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 const About = () => {
   return (
     <>
-      <Container maxW={'5xl'} py={12}>
+      <Container maxW={'5xl'} py={20}>
         <Stack spacing={2} direction={['column', 'row']}>
           <Image
             rounded={'md'}
