@@ -15,11 +15,13 @@ import {
   InputGroup,
   InputLeftElement,
   Textarea,
-  useToast
+  useToast,
+  Image
 } from '@chakra-ui/react';
 import { MdOutlineEmail } from 'react-icons/md';
 import { BsPerson } from 'react-icons/bs';
 import SocialProfile from '../social-profile';
+import QrCard from './qrCard';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -105,7 +107,8 @@ const Contact = () => {
           bgGradient="linear(to-r, blue.700, green.500)"
           color="white"
           borderRadius="lg"
-          m={{ sm: 4, md: 16, lg: 10 }}
+          m={{ sm: 4, md: 20, lg: 20 }}
+          marginTop="5rem"
           p={{ sm: 5, md: 5, lg: 16 }}>
           <Box p={4}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
@@ -179,6 +182,11 @@ const Contact = () => {
               </WrapItem>
             </Wrap>
           </Box>
+          <VStack alignItems={'left'}>
+            <Box>
+              <QrCard />
+            </Box>
+          </VStack>
         </Box>
       </Flex>
     </Container>
