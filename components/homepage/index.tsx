@@ -61,7 +61,7 @@ const Profile = ({ posts }) => {
     <>
       <Navbar />
       <Container maxW={'3xl'}>
-        <VStack textAlign={'left'} spacing={{ base: 8, md: 14 }} py={{ base: 10, md: 18 }}>
+        <VStack textAlign={'left'} spacing={{ base: 8, md: 14 }} py={{ base: 10, md: 20 }}>
           <Stack direction="row" align={'left'} alignSelf={'left'}>
             <Img
               alt="Courtney Ngai"
