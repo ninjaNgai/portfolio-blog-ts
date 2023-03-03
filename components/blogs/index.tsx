@@ -14,7 +14,7 @@ const Blog: FC<Posts> = (props): JSX.Element => {
     <>
       <Box minHeight={'90vh'} id="profile">
         <Navbar />
-        <Container maxWidth={'4xl'} marginTop="1rem">
+        <Container maxWidth={'4xl'} paddingTop="5rem">
           <Heading>Latest Posts</Heading>
         </Container>
         <Box color="textColor" minHeight="90vh" height="100%" p="2rem">

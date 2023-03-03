@@ -29,6 +29,7 @@ const BlogLayout: FC<Props> = ({ children, frontMatter }) => {
 
   return (
     <>
+      <Navbar />
       <Head>
         <title>{frontMatter.title}</title>
         <meta name="robots" content="follow, index" />
@@ -47,12 +48,10 @@ const BlogLayout: FC<Props> = ({ children, frontMatter }) => {
       </Head>
       <Box className="mdx">
         <Global styles={prismDarkTheme} />
-        <Navbar />
         <Box
           mx="auto"
           px={['1rem', '1rem', '1rem', '1rem']}
-          py={['0.5rem', '1rem', '2rem', '2rem']}
-          my="2rem"
+          py={['5rem', '5rem', '5rem', '5rem']}
           width={['full', '34rem', '48rem', '48rem']}
           display="flex"
           flexDirection="column">

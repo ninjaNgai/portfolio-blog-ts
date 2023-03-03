@@ -26,7 +26,7 @@ const Artistry = () => {
   );
   return (
     <Container maxW={'5xl'} py={12}>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} marginTop="2rem">
         <Stack spacing={4}>
           <Box mb={{ base: 8, md: 20 }}>
             <Box maxW="10rem" marginBottom="1rem">
