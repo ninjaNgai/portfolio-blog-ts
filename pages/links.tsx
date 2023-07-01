@@ -2,9 +2,9 @@ import Head from 'next/head';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
 import { Box } from '@chakra-ui/react';
-import Events from '@/components/events';
+import Links from '@/components/links';
 
-const EventsPage = () => {
+const LinksPage = () => {
   return (
     <>
       <Head>
@@ -12,10 +12,10 @@ const EventsPage = () => {
       </Head>
       <Box minHeight="90vh" id="contact">
         <Navbar />
-        <Events />
+        <Links />
       </Box>
       <Footer />
     </>
   );
 };
-export default EventsPage;
+export default LinksPage;
