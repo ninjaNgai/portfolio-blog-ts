@@ -103,6 +103,7 @@ const Links = () => {
           <Box>
             {quickLinks.map((link, index) => (
               <Link
+                key={index}
                 href={link.linkUrl}
                 isExternal={link.isExternal}
                 style={{ textDecoration: 'none' }}>
