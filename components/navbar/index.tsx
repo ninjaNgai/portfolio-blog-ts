@@ -27,6 +27,7 @@ const Navbar = () => {
     { name: 'About', link: '/about' },
     { name: 'Artistry', link: '/artistry' },
     { name: 'Resume', link: './Ngai_Courtney_02.20_2023.pdf' },
+    { name: 'Links', link: '/links' },
     { name: 'Blog', link: '/blogs' }
   ];
 
@@ -35,6 +36,7 @@ const Navbar = () => {
     { name: 'About', link: '/about' },
     { name: 'Artistry', link: '/artistry' },
     { name: 'Resume', link: './Ngai_Courtney_02.20_2023.pdf' },
+    { name: 'Links', link: '/links' },
     { name: 'Blog', link: '/blogs' },
     { name: 'Contact', link: '/contact' }
   ];

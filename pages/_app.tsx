@@ -3,9 +3,7 @@ import { MDXProvider } from '@mdx-js/react';
 import React from 'react';
 import '@/styles/global.scss';
 
-// import MDXComponents from '@/components/mdx';
-
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }): JSX.Element {
   const theme = extendTheme({
     colors: {
       brand: '#48BB78',
