@@ -46,7 +46,7 @@ const BlogLayout: FC<Props> = ({ children, frontMatter }) => {
           key="ogimage"
         />
       </Head>
-      <Box className="mdx">
+      <Box id="blog-layout-box" className="mdx" w={['fit-content', '100%']}>
         <Global styles={prismDarkTheme} />
         <Box
           mx="auto"
