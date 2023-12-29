@@ -164,20 +164,20 @@ const Artistry = () => {
         <VStack>
           <SocialButton
             label={'YouTube'}
-            href={'https://www.linkedin.com/in/courtneyngai1010/'}
+            href={'https://www.youtube.com/channel/UCmZqmQhML2U3YTrsg_1fcxA'}
             target={'_blank'}>
             <FontAwesomeIcon icon={faYoutube} size={'3x'} />
           </SocialButton>
-          <Text textAlign={'center'}>@courtneyngai</Text>
+          <Text textAlign={'center'}>@courtneykpops</Text>
         </VStack>
         <VStack>
           <SocialButton
             label={'Instagram'}
-            href={'https://www.instagram.com/ninjangai1/'}
+            href={'https://www.instagram.com/courtneykpops/'}
             target={'_blank'}>
             <FontAwesomeIcon icon={faInstagram} size={'3x'} />
           </SocialButton>
-          <Text textAlign={'center'}>@ninjangai1</Text>
+          <Text textAlign={'center'}>@courtneykpops</Text>
         </VStack>
         <VStack>
           <SocialButton
@@ -203,7 +203,7 @@ const StatsText = ({ children }) => (
 
 const stats = [
   {
-    title: '21+',
+    title: '22+',
     content: (
       <>
         <StatsText>Years of dance experience</StatsText>. She has trained in the styles of
