@@ -29,7 +29,7 @@ const Links = () => {
     },
     {
       heading: '@courtneykpops',
-      linkUrl: 'https://www.youtube.com/channel/UCmZqmQhML2U3YTrsg_1fcxA',
+      linkUrl: 'https://www.youtube.com/@courtneykpops',
       icon: 'FaYoutube',
       isExternal: true
     },

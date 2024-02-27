@@ -44,7 +44,7 @@ export default function Footer() {
           </SocialFooterButton>
           <SocialFooterButton
             label={'YouTube'}
-            href={'https://www.youtube.com/channel/UCmZqmQhML2U3YTrsg_1fcxA'}
+            href={'https://www.youtube.com/@courtneykpops'}
             target={'_blank'}>
             <FaYoutube />
           </SocialFooterButton>

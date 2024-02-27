@@ -164,7 +164,7 @@ const Artistry = () => {
         <VStack>
           <SocialButton
             label={'YouTube'}
-            href={'https://www.youtube.com/channel/UCmZqmQhML2U3YTrsg_1fcxA'}
+            href={'https://www.youtube.com/@courtneykpops'}
             target={'_blank'}>
             <FontAwesomeIcon icon={faYoutube} size={'3x'} />
           </SocialButton>
