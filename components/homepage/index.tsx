@@ -1,5 +1,16 @@
 import { useEffect, useState } from 'react';
-import { Box, Heading, Container, Text, Button, Stack, VStack, Img } from '@chakra-ui/react';
+import {
+  Box,
+  Heading,
+  Container,
+  Text,
+  Button,
+  Stack,
+  VStack,
+  Img,
+  useColorModeValue,
+  Divider
+} from '@chakra-ui/react';
 import Navbar from '@/components/navbar';
 import RecentBlog from '@/components/homepage/recent-blog-card';
 import RecentProject from '@/components/homepage/recent-project-card';
@@ -135,6 +146,46 @@ const Profile = ({ posts }) => {
           </Stack>
         </VStack>
       </Container>
+      <VStack>
+        <Box
+          maxW={'500px'}
+          w={'full'}
+          bg={useColorModeValue('white', 'gray.900')}
+          boxShadow={'md'}
+          rounded={'md'}
+          p={6}
+          m="1rem"
+          cursor="pointer"
+          overflow={'hidden'}>
+          <Stack>
+            <Text
+              color="project"
+              textTransform={'uppercase'}
+              fontWeight={800}
+              fontSize={'sm'}
+              letterSpacing={1.1}>
+              Feature
+            </Text>
+            <Heading
+              color={useColorModeValue('gray.700', 'white')}
+              fontSize={'2xl'}
+              fontFamily={'body'}>
+              Could Be Pretty Cool Podcast
+            </Heading>
+            <Text color={'gray.500'}>
+              Episode Summary: In this episode of CBPC News, we chat with Courtney Ngai, a software
+              engineer, content creator and the founder of justplatypost who shares her story of
+              combining her love for dance with technology to empower fellow content creators.{' '}
+            </Text>
+            <Divider />
+            <Button
+              as="a"
+              href="https://couldbeprettycoolnews.substack.com/p/from-tiktok-to-theatre-with-could?r=e42b1&utm_campaign=post&utm_medium=web&open=false">
+              View article
+            </Button>
+          </Stack>
+        </Box>
+      </VStack>
       <Box
         id="profile"
         display="flex"

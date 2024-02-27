@@ -3,17 +3,18 @@ import {
   ButtonGroup,
   Center,
   Container,
+  Divider,
   Flex,
   Heading,
   Image,
   Link,
   Spacer,
-  Stack,
   Text,
   VStack,
+  Stack,
   useColorModeValue
 } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaYoutube, FaGlobe } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube, FaLaptopCode } from 'react-icons/fa';
 
 const Links = () => {
   const IMAGE = 'images/PortfolioQR.png';
@@ -21,22 +22,16 @@ const Links = () => {
 
   const quickLinks = [
     {
-      heading: 'Portfolio',
-      linkUrl: 'https://www.courtneyngai.com/',
-      icon: 'FaGlobe',
-      isExternal: false
-    },
-    {
-      heading: "I'll Meet You Where You're At",
-      linkUrl: 'https://www.courtneyngai.com/',
-      icon: 'FaYoutube',
-      isExternal: true
-    },
-    {
       heading: 'Blog',
       linkUrl: 'https://www.courtneyngai.com/blogs',
-      icon: 'FaGlobe',
+      icon: 'FaLaptopCode',
       isExternal: false
+    },
+    {
+      heading: '@courtneykpops',
+      linkUrl: 'https://www.youtube.com/channel/UCmZqmQhML2U3YTrsg_1fcxA',
+      icon: 'FaYoutube',
+      isExternal: true
     },
     {
       heading: 'LinkedIn',
@@ -50,8 +45,8 @@ const Links = () => {
     let IconComponent;
 
     switch (link.icon) {
-      case 'FaGlobe':
-        IconComponent = FaGlobe;
+      case 'FaLaptopCode':
+        IconComponent = FaLaptopCode;
         break;
       case 'FaYoutube':
         IconComponent = FaYoutube;
@@ -63,7 +58,7 @@ const Links = () => {
         IconComponent = FaLinkedin;
         break;
       default:
-        IconComponent = FaGlobe;
+        IconComponent = FaLaptopCode;
         break;
     }
 
@@ -93,7 +88,7 @@ const Links = () => {
               {taglines.map((item, index) => (
                 <Text
                   key={index}
-                  color={useColorModeValue('gray.600', 'gray.400')}
+                  color={useColorModeValue('gray.700', 'gray.400')}
                   textAlign="center">
                   {item}
                 </Text>
