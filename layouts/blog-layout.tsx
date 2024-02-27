@@ -35,14 +35,14 @@ const BlogLayout: FC<Props> = ({ children, frontMatter }) => {
         <meta name="robots" content="follow, index" />
         <meta content={frontMatter.summary} name="description" />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:url" content={`https://iamcngai.com${router.asPath}`} key="ogurl" />
-        <link rel="canonical" href={`https://iamcngai.com${router.asPath}`} />
+        <meta property="og:url" content={`https://courtneyngai.com${router.asPath}`} key="ogurl" />
+        <link rel="canonical" href={`https://courtneyngai.com${router.asPath}`} />
         <meta property="og:site_name" content="Courtney Ngai " key="ogsitename" />
         <meta property="og:title" content={frontMatter.title} key="ogtitle" />
         <meta property="og:tag" content={frontMatter.tag} />
         <meta
           property="og:image"
-          content={`https://iamcngai.com${frontMatter.socialImage}`}
+          content={`https://courtneyngai.com${frontMatter.socialImage}`}
           key="ogimage"
         />
       </Head>

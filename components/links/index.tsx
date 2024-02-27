@@ -22,19 +22,19 @@ const Links = () => {
   const quickLinks = [
     {
       heading: 'Portfolio',
-      linkUrl: 'https://www.iamcngai.com/',
+      linkUrl: 'https://www.courtneyngai.com/',
       icon: 'FaGlobe',
       isExternal: false
     },
     {
       heading: "I'll Meet You Where You're At",
-      linkUrl: 'https://www.iamcngai.com/',
+      linkUrl: 'https://www.courtneyngai.com/',
       icon: 'FaYoutube',
       isExternal: true
     },
     {
       heading: 'Blog',
-      linkUrl: 'https://www.iamcngai.com/blogs',
+      linkUrl: 'https://www.courtneyngai.com/blogs',
       icon: 'FaGlobe',
       isExternal: false
     },
@@ -130,7 +130,7 @@ const Links = () => {
             ))}
           </Box>
           <Image rounded={'lg'} height={280} width={280} objectFit={'cover'} src={IMAGE} />
-          <Text>iamcngai.com</Text>
+          <Text>courtneyngai.com</Text>
         </VStack>
       </Center>
     </Container>

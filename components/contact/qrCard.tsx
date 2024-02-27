@@ -46,7 +46,7 @@ export default function QrCard() {
             fontFamily={'body'}
             fontWeight={500}
             as="a"
-            href="https://www.iamcngai.com/contact"
+            href="https://www.courtneyngai.com/contact"
             _hover={{ color: 'blue.400' }}>
             Contact QR code
           </Heading>

@@ -21,8 +21,8 @@ const Home = (props) => {
         <meta name="robots" content="follow, index" />
         <meta content={meta.summary} name="description" />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:url" content={`https://iamcngai.com${router.asPath}`} key="ogurl" />
-        <link rel="canonical" href={`https://iamcngai.com${router.asPath}`} />
+        <meta property="og:url" content={`https://courtneyngai.com${router.asPath}`} key="ogurl" />
+        <link rel="canonical" href={`https://courtneyngai.com${router.asPath}`} />
         <meta property="og:site_name" content="Courtney Ngai" key="ogsitename" />
         <meta property="og:title" content={meta.title} key="ogtitle" />
         <meta property="og:image" content={meta.img} key="ogimage" />
