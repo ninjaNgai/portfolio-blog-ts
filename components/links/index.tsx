@@ -11,10 +11,9 @@ import {
   Spacer,
   Text,
   VStack,
-  Stack,
   useColorModeValue
 } from '@chakra-ui/react';
-import { FaGithub, FaLinkedin, FaYoutube, FaLaptopCode } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube, FaLaptopCode, FaArrowRight } from 'react-icons/fa';
 
 const Links = () => {
   const IMAGE = 'images/PortfolioQR.png';
@@ -41,6 +40,22 @@ const Links = () => {
     }
   ];
 
+  const events = [
+    {
+      heading: 'Arizona Dance Festival 2024 - Sat, Sept 21 - Desert Dance Theater',
+      linkUrl: 'https://www.tempecenterforthearts.com/Home/Components/Calendar/Event/78251/5071',
+      icon: 'FaArrowRight',
+      isExternal: true
+    },
+    {
+      heading: 'Life is Like a Movie - Sept 28-29 - ClassicalFusionDance company',
+      linkUrl:
+        'https://stagestubs.com/us/classicalfusiondance/classicalfusiondance-presents-life-is-like-a-movie-2024',
+      icon: 'FaArrowRight',
+      isExternal: true
+    }
+  ];
+
   const SocialIcon = ({ link }) => {
     let IconComponent;
 
@@ -56,6 +71,9 @@ const Links = () => {
         break;
       case 'FaLinkedin':
         IconComponent = FaLinkedin;
+        break;
+      case 'FaArrowRight':
+        IconComponent = FaArrowRight;
         break;
       default:
         IconComponent = FaLaptopCode;
@@ -124,6 +142,43 @@ const Links = () => {
               </Link>
             ))}
           </Box>
+          <Divider />
+          <Text color={useColorModeValue('gray.700', 'gray.400')} textAlign="center">
+            Dance performances
+          </Text>
+          <Box>
+            {events.map((link, index) => (
+              <Link
+                key={index}
+                href={link.linkUrl}
+                isExternal={link.isExternal}
+                style={{ textDecoration: 'none' }}>
+                <Flex
+                  as="button"
+                  p={5}
+                  mb={2}
+                  minWidth="md"
+                  alignItems="center"
+                  gap="2"
+                  shadow="md"
+                  borderWidth="1px"
+                  rounded="lg"
+                  _hover={{ bg: useColorModeValue('green.300', 'green.400') }}>
+                  <Box p="2">
+                    <Heading size="md">{link.heading}</Heading>
+                  </Box>
+                  <Spacer />
+                  <ButtonGroup gap="2">
+                    <SocialIcon link={link} />
+                  </ButtonGroup>
+                </Flex>
+              </Link>
+            ))}
+          </Box>
+          <Divider />
+          <Text color={useColorModeValue('gray.700', 'gray.400')} textAlign="center">
+            Connect with me!
+          </Text>
           <Image rounded={'lg'} height={280} width={280} objectFit={'cover'} src={IMAGE} />
           <Text>courtneyngai.com</Text>
         </VStack>
